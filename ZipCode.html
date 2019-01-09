@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = prompt("Nhap chuoi can kiem tra");
+    function is_UsZipCode(str) {
+        regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if(regexp.test(str)) {
+            return true;
+        }else return false;
+    }
+    is_UsZipCode(str);
+    console.log(is_UsZipCode(str));
+
+</script>
+</body>
+</html>
